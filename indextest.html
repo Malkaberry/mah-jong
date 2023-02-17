@@ -1,0 +1,86 @@
+﻿<!DOCTYPE html>
+<html lang="he">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>שם המשחק</title>
+    <meta name="description" content="name of game" />
+    <meta name="keywords" content="" />
+    <meta name="author" content="names" />
+
+    <!-- CSS -->
+
+    <link href="styles/myStyle.css" rel="stylesheet" />
+    <!--jQuery library-->
+    <script src="jScripts/jquery-1.12.0.min.js"></script>
+    <!--הקוד שמפעיל את תפריט הניווט-->
+    <script src="jScripts/myScript.js"></script>
+  </head>
+
+  <body>
+    <div id="container">
+      <header>
+        <!--קישור לדף עצמו כדי להתחיל את המשחק מחדש בלחיצה על הלוגו-->
+        <a href="indextest.html">
+          <img id="logo" src="./imgs/Asset 8-8.png" />
+          <!--הלוגו של המשחק שלכם-->
+        </a>
+
+        <!--תפריט הניווט בראש העמוד-->
+        <nav>
+          <ul>
+            <li><a class="about">אודות</a></li>
+            <li><a class="howToPlay">איך משחקים?</a></li>
+          </ul>
+        </nav>
+      </header>
+      <!--------------- ABOUT POP UP (START) --------------->
+      <div id="aboutDiv" class="popUp bounceInDown hide">
+        <p class="closePop">
+          <a class="closeAbout">X</a>
+        </p>
+        <p class="aboutText">
+          אפיון ופיתוח : עדי פפיא, ענבל עזר ומלכה ברי
+          <br />
+          אופיין ופותח במסגרת פרוייקט בקורסים:
+          <br />
+          סביבות לימוד אינטראקטיביות 1 + תכנות אינטראקציה ואנימציה
+          <br />
+          <a href="https://www.hit.ac.il/" class="aboutTextLink"
+            >הפקולטה לטכנולוגיות למידה</a
+          >
+        </p>
+        <img id="odot" src="./imgs/odot.png" />
+      </div>
+
+      <div id="howToPlayDiv" class="popUp bounceInDown hide">
+        <p class="closePop">
+          <a class="closeHowToPlay">X</a>
+        </p>
+        <img id="howToPlay" src="./imgs/how to play.png" />
+        <div id="video">
+          <iframe
+            height="100%"
+            width="100%"
+            src="https://www.youtube.com/embed/diFDMkm2Ol0"
+            title="YouTube video player"
+            frameborder="5"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen
+          >
+          </iframe>
+        </div>
+      </div>
+
+      <div id="gameArea" class="">
+        <img id="Bg" src="./imgs/Asset 10-8.png" />
+        <!--src = הקישור של דף המשחק שלכם -->
+        <iframe id="gameIframe"
+          src="https://i.simmer.io/@malkaberry/mah-jong"
+          style="width: 1920px; height: 1080px"
+        ></iframe>
+      </div>
+    </div>
+  </body>
+</html>
