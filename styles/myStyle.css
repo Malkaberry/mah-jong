@@ -116,6 +116,7 @@ nav ul li a:hover {
   position: fixed;
   top: 5%;
   left: 15%;
+  zoom: 75%;
   transform: translate(-50%, -50%);
 }
 
@@ -123,6 +124,7 @@ nav ul li a:hover {
   position: fixed;
   top: 5%;
   left: 15%;
+  zoom: 75%;
   transform: translate(-50%, -50%);
 }
 
